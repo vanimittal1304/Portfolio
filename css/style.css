@@ -84,11 +84,13 @@
 .site-main .site-banner .site-title h4{
   font-size: 1.5rem;
 }
+
 .site-main .site-banner .banner-image>img{
   padding: 7rem 0;
   width: 90rem;
   animation: mover 1s infinite  alternate;
 }
+
 @-webkit-keyframes mover {
   0% { transform: translateY(0); }
   100% { transform: translateY(-15px); }
@@ -121,7 +123,10 @@
   width: 80%;
 }
 
-
+.site-main .about-area .about-title .btn a{
+  text-decoration: none;
+  color: white;
+}
 /* CSS FOR ABOUT US SECTION ENDS HERE */
 
 /* CSS FOR BRAND SECTION STARTS  */
