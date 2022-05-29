@@ -72,7 +72,7 @@
 .site-main .site-banner .site-title h3::after{
   content: "";
   height: 2px;
-  width: 18vw;
+  width: 10vw;
   background: black;
   display: inline-block;
   margin-left: 5%;
@@ -87,6 +87,15 @@
 .site-main .site-banner .banner-image>img{
   padding: 7rem 0;
   width: 90rem;
+  animation: mover 1s infinite  alternate;
+}
+@-webkit-keyframes mover {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-15px); }
+}
+@keyframes mover {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-15px); }
 }
 
 
@@ -126,6 +135,8 @@
 .site-main .brand-area .first-row .col-lg-4{
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
+  /* flex-basis: 50%; */
 }
 .site-main .brand-area .first-row .col-lg-4> .single-brand{
   border: 1px solid var(--border-color);
@@ -237,6 +248,8 @@
 .site-main .project-area .button-group button +button{
   padding-left: 3rem;
 }
+
+
 .site-main .project-area .grid .our-project > .title h4{
   font: normal 700 25px/12px ;
 }
@@ -303,6 +316,9 @@
   background: url(../img/subscribe-bg.png) no-repeat;
   padding: 10rem 0;
   margin: 3rem auto;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
 }
 
 .site-main .subscribe-us-area .subscribe .subscribe-title h4{
@@ -331,7 +347,7 @@
 .site-main .subscribe-us-area .subscribe form .btn-submit button{
   background: whitesmoke;
   color: #000;
-  padding: .7rem 2rem;
+  padding: 1.5rem 3rem;
 }
 
 /* CSS FOR SUBSCRIBE ME ENDS*/ 
@@ -350,11 +366,13 @@ footer.footer-area .social h5{
 footer.footer-area .social a > i{
   font-size:22px;
   padding: 2rem;
-  color: var(--border-color);
+  /* color: var(--border-color); */
+  color: black;
 }
 
 footer.footer-area .social a:hover > i{
   color: var(--primary-color);
+  /* color: #000; */
 }
 
 
