@@ -12,7 +12,20 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "spartan", sans-serif;
+    
   }
+  body{
+    overflow-x: hidden;
+  }
+
+  ::-webkit-scrollbar{
+    width: 7px;
+    background-color: rgb(227, 227, 227);
+}
+::-webkit-scrollbar-thumb{
+  background:linear-gradient(rgb(87, 51, 206),rgb(59, 46, 181));
+  border-radius: 4px;
+}
 
   /* css for banner area */
 
@@ -25,7 +38,7 @@
 }
 
 .header_area .main-menu .nav-item .nav-link{
-    font: normal 500 15px/2px var(--roboto);
+    font: normal 500 15px/2px ;
     text-transform: uppercase;
     padding: 1.7rem;
     color: var(--title-color);
@@ -85,11 +98,19 @@
 
 .site-main .about-area .about-title h2>span{
   display: block;
-  font: normal bold 49px/60px var(--roboto);
+  font: normal bold 49px/60px ;
   letter-spacing: 10px;
 }
 .site-main .about-area .about-title.paragraph>p{
-  padding: .4rem 0;
+  /* padding: .4rem 0; */
+}
+.site-main .about-area .about-title p {
+  padding: 1rem 0rem !important;
+  letter-spacing: 1px;
+}
+.about-area .about-image img{
+  height: 100%;
+  width: 80%;
 }
 
 
@@ -129,6 +150,7 @@
 }
 .site-main .brand-area .experience-area{
   padding-left: 1rem;
+  position: relative;
 }
 .site-main .brand-area .experience-area span{
   display: block;
@@ -142,7 +164,7 @@
   position: relative;
 }
 .site-main .brand-area .experience-area .bg-panel{
-  position: relative;
+  position: absolute;
   left: -190px; top: 0%;
   background: #e029290a;
   width: 400px;
@@ -151,17 +173,26 @@
   z-index: -1;
 }
 .site-main .brand-area .experience-area .years-area .years{
-  font: normal bold 84px/40px var(--roboto);
+  font: normal bold 84px/40px ;
   color: var(--primary-color2);
   z-index: 2;
 }
 
 .site-main .brand-area .experience-area .years-area h2 > span{
-  font: normal 600 22px/30px var(--roboto);
+  font: normal 600 22px/30px ;
 }
 
 .site-main .brand-area .experience-area .call-area{
   padding-left: 10rem;
+
+}
+.site-main .brand-area .experience-area .call-area i{
+  font-size: 50px;
+  padding-right: 15px;
+}
+.site-main .brand-area .experience-area .call-area a{
+  text-decoration: none;
+
 }
 
 
@@ -183,7 +214,7 @@
 .site-main> .services-area .services{
   background: rgba(248, 252, 253, 0.973);
   padding: 2rem 0;
-  width: 16rem;
+  width: 15rem;
   margin: 5rem .5rem;
   transition: box-shadow .7s ease;
 }
@@ -201,17 +232,21 @@
 .site-main .project-area .button-group button{
   background: transparent;
   border: none;
-  font: normal 500 16px/130px var(--roboto);
+  font: normal 500 16px/130px ;
   text-transform: uppercase;
 }
 .site-main .project-area .button-group button +button{
   padding-left: 3rem;
 }
 .site-main .project-area .grid .our-project > .title h4{
-  font: normal 700 25px/12px var(--roboto);
+  font: normal 700 25px/12px ;
 }
-.site-main .project-area .grid .our-project .img a:hover img{
+.site-main .project-area .grid .out-project .img a:hover img{
   filter: brightness(1.1) drop-shadow(1px 8px 30px #b1afaf);
+}
+.site-main .project-area .button-group{
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 
@@ -221,6 +256,8 @@
 
 .site-main .about-area .about-title p{
   padding: 1rem 7rem;
+  /* width: 70%; */
+  /* text-align: center; */
 }
 
 .site-main .about-area .client{
@@ -238,7 +275,7 @@
 }
 
 .site-main .about-area .client .about-client h4{
-  font: normal 500 21px/ 20px var(--roboto);
+  font: normal 500 21px/ 20px ;
 }
 
 .site-main .about-area .client .about-client p{
@@ -270,7 +307,7 @@
 }
 
 .site-main .subscribe-us-area .subscribe .subscribe-title h4{
-  font: normal 700 30px/ 30px var(--roboto);
+  font: normal 700 30px/ 30px ;
   color: whitesmoke;
 }
 
@@ -285,7 +322,7 @@
   border: 1px solid whitesmoke;
   background: transparent;
   color: white;
-  font: normal 500 17px/20px var(--roboto);
+  font: normal 500 17px/20px ;
 }
 
 .site-main .subscribe-us-area .subscribe form .input-textbox input::placeholder{
@@ -308,7 +345,7 @@ footer.footer-area{
 }
 
 footer.footer-area .social h5{
-  font: normal 500 23px/ 30px var(--roboto);
+  font: normal 500 23px/ 30px ;
 }
 
 footer.footer-area .social a > i{
